@@ -7,9 +7,10 @@ import bronze from "./3rd.png";
 
 import user2 from "./user2.png";
 import top from "./top3.png";
+import { NavLink } from 'react-router-dom';
 const Question = () => {
   return (
-    <div className='w-screen flex justify-center bg-slate-100 items-center h-screen'>
+    <div className='w-screen flex justify-center bg-slate-100 items-center h-screen font-classy'>
       <div className='w-3/4 h-[500px] flex rounded-r-3xl bg-[#3c003e]'> 
       
       <div  className='w-1/3 text-white  text-center flex  flex-col  gap-4 justify-center items-center'>
@@ -17,7 +18,9 @@ const Question = () => {
         <img src={user2} className='w-12 ' alt="" />
         <h1 className='text-5xl font-bold cursor-pointer ml-4'>SHAGUN</h1>
       </div>
+      <NavLink to="Editprofile">
         <h1 className='cursor-pointer underline hover:scale-105 transition-transform duration-200 italic underline-offset-2'> Edit Profile </h1>
+        </NavLink>
     <div className='bg-white text-black p-3 rounded-3xl w-72'>
         <h3 className='text-xl font-bold shadow-md '>Your Top 3 Score</h3>
           <div className='flex gap-3  text-xl'> 
@@ -114,6 +117,7 @@ const Question = () => {
 
       </div>
       </div>
+      
     </div>
   )
 }

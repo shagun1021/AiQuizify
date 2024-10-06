@@ -1,7 +1,5 @@
 import React from "react";
-import logo from "./logo.png";
-import search from "./search.png";
-import user from "./user.png";
+
 import js from "./js.jpeg";
 import c from "./c.jpg";
 import java from "./java.jpg";
@@ -9,42 +7,12 @@ import hs from "./top2.png";
 import score from "./score.png";
 import "./likebtn.css";
 import { NavLink } from "react-router-dom";
+import Nav from "./Nav";
 
 const Dashboard2 = () => {
   return (
     <div className="font-classy ">
-      <nav className=" justify-between  flex items-center shadow-lg ">
-        <img className="w-28 ml-8" src={logo} alt="" />
-        <div className="flex gap-20 mr-20 items-center">
-          <a href="" className="text-lg hover:underline hover:scale-110 transition-transform duration-300 decoration-[#722974] font-bold">
-            Home
-          </a>
-          <NavLink to="Quiz" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
-            Problem
-          </NavLink>
-          <a href="" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
-            All Users
-          </a>
-          <a href="" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
-            About
-          </a>
-          <div className="flex">
-            <input
-              type="text"
-              placeholder="Find any User"
-              className="rounded-full border-2 border-black px-4 py-1 overflow-hidden"
-            />
-            <img
-              src={search}
-              className="w-8  absolute right-[160px] mt-2"
-              alt=""
-            />
-            <NavLink to="profile">
-            <img src={user} className="w-12 hover:scale-110 transition-transform duration-300 ml-6 cursor-pointer" alt="" />
-         </NavLink>
-          </div>
-        </div>
-      </nav>
+     
       <div className=" w-full  h-[650px] px-16  pt-3  bg-slate-100">
         <div className="flex w-full  ">
         <div className=" flex  pt-3 h-96 w-full gap-10  ">
@@ -68,7 +36,7 @@ const Dashboard2 = () => {
                 </button>
                 <button className="bg-[#3c003e] hover:scale-110 transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-white">
                   {" "}
-                  Remine Me Later
+                  Remind Me Later
                 </button>
 
                 <button className="buttonLike ml-[580px] relative bottom-6  ">
@@ -108,7 +76,7 @@ const Dashboard2 = () => {
                 </button>
                 <button className="bg-[#3c003e] hover:scale-110 transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-white">
                   {" "}
-                  Remine Me Later
+                  Remind Me Later
                 </button>
 
                 <button className="buttonLike ml-[580px] relative bottom-6  ">
@@ -147,7 +115,7 @@ const Dashboard2 = () => {
                 </button>
                 <button className="bg-[#3c003e] hover:scale-110 transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-white">
                   {" "}
-                  Remine Me Later
+                  Remind Me Later
                 </button>
 
                 <button className="buttonLike ml-[580px] relative bottom-6  ">
@@ -255,7 +223,7 @@ const Dashboard2 = () => {
             
             </table>
           </div>
-          <NavLink to="Question">
+          <NavLink to="/Question">
           <div className="w-[500px]  bg-[#3c003e] justify-center items-center flex text-white mt-4 rounded-r-2xl  h-36 text-2xl cursor-pointer"> 
             <h1>
             Tap Here To View Your Score

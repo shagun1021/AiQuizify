@@ -1,20 +1,25 @@
 import React from "react";
 import gold from "./1st.png";
-
+import { NavLink, Outlet } from "react-router-dom";
 import silver from "./2nd.png";
 import bronze from "./3rd.png";
 
 import user from "./user.png";
 const Profile = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-r  from-[#07012d] to-[#3c003e] ">
+    <>   
+    <div className="bg-gradient-to-r  from-[#07012d] to-[#3c003e]  h-full  pb-11">
+     
+    <div className="w-screen justify-center pt-12 flex  font-classy ">
       < div className=" w-[80%] flex gap-3  bg-white h-[80%] p-7">
-        <div className="w-[40%] flex  flex-col justify-evenly">
+        <div className="w-[40%] flex shadow-2xl flex-col justify-evenly">
           <div className="  shadow-2xl gap-5 rounded-2xl h-[30%] items-center flex p-3">
             <img src={user} alt="" className="w-28" />
-            <div className="flex gap-2 flex-col ">
-              <h3 className="text-3xl font-bold">SHAGUN THAKUR</h3>
+            <div className="flex gap-2 flex-col  ">
+              <h3 className="text-3xl font-bold ">Shagun09</h3>
+              <NavLink to="EditProfile">
               <h1 className="italic underline cursor-pointer">Edit Profile</h1>
+              </NavLink>
             </div>
           </div>
          
@@ -33,14 +38,14 @@ const Profile = () => {
               </tr>
               <tr>
                 <td>
-                  <img src={silver} alt="" className="w-10" />
+                  <img src={silver} alt="" className="w-8" />
                 </td>
                 <td className="w-24 border-r-2">Node Js</td>
                 <td className="w-24">8.4</td>
               </tr>
               <tr>
                 <td>
-                  <img src={bronze} alt="" className="w-8" />
+                  <img src={bronze} alt="" className="w-5 ml-2" />
                 </td>
                 <td className="w-24 border-r-2">Node Js</td>
                 <td className="w-24">8.4</td>
@@ -135,12 +140,13 @@ const Profile = () => {
           </div>
         </div>
 
-            <div className="w-full shadow-2xl flex-wrap overflow-auto h-full rounded-2xl  flex flex-col justify-around p-4 px-6  bg-white   ">
+            <div className="w-full  flex-wrap overflow-auto h-full rounded-2xl  flex flex-col justify-around p-4 px-6  bg-white   ">
               <p className="text-xl">
-                Hello i m shagun , frontend develover and currently pursuing MCA
-                at KIET group of institutions . Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolor reprehenderit accusamus nesciunt exercitationem qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias perspiciatis placeat accusantium iusto beatae, iure nobis tempore? Eligendi sed ipsa, fugit aperiam. Voluptatibus, cum.
+                Hello i m shagun , full stack develover and currently pursuing MCA
+                at KIET group of institutions . Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolor reprehenderit accusamus  sed ipsa, fugit aperiam. Voluptatibus, cum.
               </p>
               <div className="mt-3 flex flex-col gap-3 text-xl">
+              <h1>Name : Shagun</h1>
                 <h1>Age : 20</h1>
                 <h1>Gender : Female</h1>
                 <h1>Gmail : shagun54254@gmail.com</h1>
@@ -181,7 +187,10 @@ const Profile = () => {
           
 
         </div>
+        
         </div>
+        </div>
+        </>
       
         
     

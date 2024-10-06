@@ -4,7 +4,7 @@ import apple from "./wapple.png";
 import google from "./google.png";
 import logo from "./logo.png";
 import { NavLink } from 'react-router-dom';
-import Dashboard from './Dashboard';
+
 
 const Signup = () => {
   return (
@@ -28,7 +28,7 @@ const Signup = () => {
                 className="border-[2px] rounded-full  w-[330px] border-gray-200 p-2 px-5 mt-5 text-lg "
                 placeholder="Set Password" 
               />
-               <NavLink to="/Dashboard">
+               <NavLink to="/Nav">
               <button className=" w-[310px] ml-2 text-white p-1 hover:bg-[#57015a] bg-[#3c003e] mt-4 rounded-full" >
                 Sign Up
               </button>
@@ -60,6 +60,7 @@ const Signup = () => {
 
 
       </div>
+    
       </div>
   )
 }

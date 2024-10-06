@@ -4,7 +4,7 @@ import apple from "./wapple.png";
 import google from "./google.png";
 import logo from "./logo.png";
 import { NavLink } from 'react-router-dom';
-import Dashboard from './Dashboard';
+
 
 
 const Login = () => {
@@ -35,7 +35,7 @@ const Login = () => {
             <h6 className="underline text-gray-500 mt-1 cursor-pointer hover:text-gray-700  ml-[200px]">
               Forgot Password?{" "}
             </h6>
-           <NavLink to="/Dashboard">
+           <NavLink to="/Nav">
             <button
               className=" w-[310px] ml-2 text-white p-1 hover:bg-[#57015a] bg-[#3c003e] mt-2 rounded-full"
               // onClick={postLogIn}
@@ -70,6 +70,7 @@ const Login = () => {
         </div>
     
     </div>
+    
   </div>
   )
 }

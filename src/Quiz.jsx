@@ -2,8 +2,8 @@ import React from 'react'
 
 const Quiz = () => {
   return (
-    <div className='w-screen flex justify-center bg-slate-100 items-center h-screen'>
-      <div className='w-3/4 h-[500px] text-white  p-16 flex rounded-r-3xl bg-[#3c003e]'> 
+    <div className='w-screen flex justify-center  items-center pt-16  font-classy'>
+      <div className='w-3/4 h-[500px] text-white  items-center pl-12 flex rounded-3xl bg-[#3c003e]'> 
       <div className='gap-10 flex  flex-col'>
       <h1 className='text-2xl font-bold'>Question 1 : </h1>
      
@@ -42,6 +42,7 @@ const Quiz = () => {
 
 </div>
       </div>
+     
       </div>
     
   )
