@@ -28,12 +28,12 @@ const Dashboard2 = () => {
                 />
               </div>
               <Card img={c} sub="C" />
-              <Card img={cS} sub="C#" />
               <Card img={cpp} sub="C++" />
+              <Card img={cS} sub="C#" />
+              <Card img={java} sub="JAVA" />
               <Card img={js} sub="JS" />
               <Card img={node} sub="Node JS" />
               <Card img={python} sub="Python" />
-              <Card img={java} sub="JAVA" />
             </div>
             <div className="bg-white   h-96 rounded-2xl w-[500px]">
               <div className="flex bg-[#3c003e] justify-center">
