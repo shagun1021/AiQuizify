@@ -10,8 +10,8 @@ import top from "./top3.png";
 import { NavLink } from 'react-router-dom';
 const Question = () => {
   return (
-    <div className='w-screen flex justify-center bg-slate-100 items-center h-screen font-classy'>
-      <div className='w-3/4 h-[500px] flex rounded-r-3xl bg-[#3c003e]'> 
+    <div className='w-screen flex justify-center  mt-16 items-center  font-classy'>
+      <div className='w-3/4 h-[500px] flex shadow-2xl rounded-r-3xl bg-[#3c003e]'> 
       
       <div  className='w-1/3 text-white  text-center flex  flex-col  gap-4 justify-center items-center'>
       <div className=' flex items-center'>

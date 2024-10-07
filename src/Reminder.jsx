@@ -3,9 +3,12 @@ import java from "./java.jpg";
 import js from "./js.jpeg";
 import c from "./c.jpg";
 import remin from "./remin.png";
+import ReminderCard from './ReminderCard';
+
+import python from "./python.png";
 const Reminder = () => {
   return (
-    <div className='px-20 w-screen'>
+    <div className='px-20 '>
   <div className='mt-3 flex flex-col w-full'>
     <div className='flex w-full justify-center items-center gap-3'>
     <h1 className='text-2xl font-bold my-3'>Your Reminder
@@ -14,60 +17,11 @@ const Reminder = () => {
     </h1>
     <img src={remin} className='w-8 h-8' alt="" />
     </div>
- <div className=" mt-3 bg-white flex  shadow-2xl rounded-r-2xl h-40">
-        <img src={java} className=" h-40 p-2" alt="" />
-        <div className="flex justify-between  mx-4 w-full items-center ">
-          <h1 className="  text-4xl">Top JAVA Interviw Questions </h1>
-          <div className='flex w-[40%]'>
-            <button className="bg-[#3c003e] h-[30%] w-[50%]  hover:scale-105 transition-transform duration-300 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Start Now{" "}
-            </button>
-            <button className="bg-[#3c003e] hover:scale-105 h-[40%] w-[50%] transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Remove
-            </button>
-
-                           </div>
-          
-        </div>
-        </div>
-        <div className=" mt-3 bg-white flex  shadow-2xl rounded-r-2xl h-40">
-        <img src={c} className=" h-40 p-2" alt="" />
-        <div className="flex justify-between  mx-4 w-full items-center ">
-          <h1 className="  text-4xl">Top C Interviw Questions </h1>
-          <div className='flex w-[40%]'>
-            <button className="bg-[#3c003e] h-[30%] w-[50%]  hover:scale-105 transition-transform duration-300 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Start Now{" "}
-            </button>
-            <button className="bg-[#3c003e] hover:scale-105 h-[40%] w-[50%] transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Remove
-            </button>
-
-                           </div>
-          
-        </div>
-        </div>
-        <div className=" mt-3 bg-white flex  shadow-2xl rounded-r-2xl h-40">
-        <img src={js} className=" h-40 p-2" alt="" />
-        <div className="flex justify-between  mx-4 w-full items-center ">
-          <h1 className="  text-4xl">Top JS Interviw Questions </h1>
-          <div className='flex w-[40%]'>
-            <button className="bg-[#3c003e] h-[30%] w-[50%]  hover:scale-105 transition-transform duration-300 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Start Now{" "}
-            </button>
-            <button className="bg-[#3c003e] hover:scale-105 h-[40%] w-[50%] transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-lg text-white">
-              {" "}
-              Remove
-            </button>
-
-                           </div>
-          
-        </div>
-        </div>
+        <ReminderCard img={java} name={"JAVA"}/>
+        <ReminderCard img={js} name={"JS"}/>
+        <ReminderCard img={c} name={"C"}/>
+        <ReminderCard img={java} name={"JAVA"}/>
+        <ReminderCard img={python} name={"Python"}/>
         </div> 
        
 </div>
