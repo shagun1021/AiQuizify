@@ -27,13 +27,13 @@ const Dashboard2 = () => {
                   placeholder="Enter the Subject on which you want quizz.. "
                 />
               </div>
-              <Card img={c} sub="C" />
+              <Card img={node} sub="Node JS" />
               <Card img={cpp} sub="C++" />
+              <Card img={python} sub="Python" />
               <Card img={cS} sub="C#" />
               <Card img={java} sub="JAVA" />
               <Card img={js} sub="JS" />
-              <Card img={node} sub="Node JS" />
-              <Card img={python} sub="Python" />
+              <Card img={c} sub="C" />
             </div>
             <div className="bg-white   h-96 rounded-2xl w-[500px]">
               <div className="flex bg-[#3c003e] justify-center">

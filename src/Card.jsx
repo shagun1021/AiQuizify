@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Card(props) {
   const { img, sub } = props;
@@ -9,10 +10,12 @@ function Card(props) {
         <div className="flex gap-4 mx-4 flex-col">
           <h1 className=" mt-6  text-2xl">Top {sub} Interviw Questions </h1>
           <div>
+            <NavLink to="Quiz">
             <button className="bg-[#3c003e] hover:scale-110 transition-transform duration-300 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-white">
               {" "}
               Start Now{" "}
             </button>
+            </NavLink>
             <button className="bg-[#3c003e] hover:scale-110 transition-transform duration-300 ml-4 hover:bg-[#57015a] p-3 px-6 rounded-2xl text-white">
               {" "}
               Remind Me Later

@@ -18,9 +18,7 @@ const Nav = () => {
       <NavLink to="Reminder" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
         Reminder's
       </NavLink>
-      <NavLink to="Quiz" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
-        Problem
-      </NavLink>
+     
       <NavLink to="AllUser" className="text-lg hover:scale-110 transition-transform duration-300 font-bold hover:underline decoration-[#722974] ">
         All Users
       </NavLink>
@@ -31,11 +29,13 @@ const Nav = () => {
           placeholder="Find any User"
           className="rounded-full border-2 border-black px-4 py-1 overflow-hidden"
         />
-        <img
+        <NavLink to="SearchInfo">
+        <img 
           src={search}
           className="w-8  absolute right-[160px] mt-2"
           alt=""
         />
+        </NavLink>
         <NavLink to="profile">
         <img src={user} className="w-12 hover:scale-110 transition-transform duration-300 ml-6 cursor-pointer" alt="" />
      </NavLink>

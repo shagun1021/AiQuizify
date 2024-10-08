@@ -18,10 +18,8 @@ const Question = () => {
         <img src={user2} className='w-12 ' alt="" />
         <h1 className='text-5xl font-bold cursor-pointer ml-4'>SHAGUN</h1>
       </div>
-      <NavLink to="Editprofile">
-        <h1 className='cursor-pointer underline hover:scale-105 transition-transform duration-200 italic underline-offset-2'> Edit Profile </h1>
-        </NavLink>
-    <div className='bg-white text-black p-3 rounded-3xl w-72'>
+      
+    <div className='bg-white mt-6 text-black p-3 rounded-3xl w-72'>
         <h3 className='text-xl font-bold shadow-md '>Your Top 3 Score</h3>
           <div className='flex gap-3  text-xl'> 
             <table>

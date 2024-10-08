@@ -15,6 +15,7 @@ import AllUser from "./AllUser";
 import Like from "./Like";
 import Reminder from "./Reminder";
 import Nav from "./Nav";
+import SearchInfo from "./SearchInfo";
 
 const router = createBrowserRouter([
   {
@@ -29,10 +30,7 @@ const router = createBrowserRouter([
         path: "",
         element: <Dashboard2 />,
       },
-      {
-        path: "Dashboard/Question",
-        element: <Question />,
-      },
+   
       {
         path: "Quiz",
         element: <Quiz />,
@@ -49,10 +47,35 @@ const router = createBrowserRouter([
         path: "Dashboard/Question/EditProfile",
         element: <EditProfile />,
       },
+      {
+        path: "SearchInfo",
+        element: <SearchInfo />,
+      },
+      
+      {
+        path: "Question/EditProfile",
+        element: <EditProfile />,
+      },
+      {
+        path:"Question",
+        element:<Question/>
+      },
+      {
+        path:"Dashboard/Question",
+        element:<Question/>
+      },
 
       {
         path: "AllUser",
         element: <AllUser />,
+      },
+      {
+        path: "Dashboard/Quiz",
+        element: <Quiz />,
+      },
+      {
+        path: "Nav/Quiz",
+        element: <Quiz />,
       },
       {
         path: "Like",
@@ -68,6 +91,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+ 
   {
     path: "/login",
     element: <Login />,

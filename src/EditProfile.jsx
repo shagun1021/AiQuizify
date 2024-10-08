@@ -4,7 +4,7 @@ import user from "./user.png";
 const EditProfile = () => {
   return (
     <div className='font-classy'>
-      <div className='w-screen h-screen flex fixed justify-center items-center'>
+      <div className='w-screen h-screen flex fixed justify-center mt-6'>
         <div className='w-[80%] h-[80%] bg-gradient-to-r flex  rounded-3xl from-[#07012d] to-[#3c003e]   '>
           <div className='bg-[#07012d] flex justify-center items-center w-[40%] h-full'>
             <div className='w-full flex justify-center '>
